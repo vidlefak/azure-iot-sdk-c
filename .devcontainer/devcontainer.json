@@ -5,6 +5,8 @@
       "ms-vscode.cpptools"
     ],
 
+    "image": "aziotbld/vscode",
+
     // Run Bash script in .devcontainer directory
     "postCreateCommand": "sudo /bin/bash ./.devcontainer/env.sh"
 }
