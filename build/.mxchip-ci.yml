@@ -63,7 +63,7 @@ jobs:
       # send_telemetry [args]
 
       SERIAL_TASK: $(SERIAL_TASK)
-      IOTHUB_CONNECTION_STRING: $(MXCHIP_NIGHTLY_DEVICE_STRING)
+      IOTHUB_CONNECTION_STRING: $(TLS1.2_IOTHUB_CONNECTION_STRING)
     displayName: 'run_test'
 
   - script: |
