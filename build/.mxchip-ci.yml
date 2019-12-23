@@ -44,6 +44,8 @@ jobs:
     displayName: 'deploy'
 
   - script: |
+      dmesg | grep -i tty
+      ifconfig
       ls
       cd $(Build.SourcesDirectory)/testtools/UART_interface/
       . input.sh
