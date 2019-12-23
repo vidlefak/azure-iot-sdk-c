@@ -30,7 +30,7 @@ jobs:
     # condition: succeeded()
 
 - job: Execute
-  dependsOn: Cross_Compile
+  # dependsOn: Cross_Compile
   pool:
     name: $(MXCHIPAGENTPOOL)
   steps:
