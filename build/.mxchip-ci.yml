@@ -36,8 +36,8 @@ jobs:
   steps:
   - task: DownloadBuildArtifacts@0
     displayName: 'Download Build Artifacts'
-    inputs:
-      artifactName: 'drop'
+    # inputs:
+      # artifactName: 'drop'
 
   - script: |
       echo $(NEWTIN) | sudo -S cp $(System.ArtifactsDirectory)/drop/mxchip.bin /media/newt/$(MXCHIP_TO_FLASH)
