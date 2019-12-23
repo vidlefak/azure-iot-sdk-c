@@ -45,6 +45,7 @@ jobs:
 
   - script: |
       dmesg | grep -i tty
+      set | grep USER
       ifconfig
       ls
       cd $(Build.SourcesDirectory)/testtools/UART_interface/
